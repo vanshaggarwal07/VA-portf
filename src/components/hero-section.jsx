@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export function HeroSection() {
   const titles = [
-    "FULL STACK DEVELOPER",
+    "SOFTWARE DEVELOPER",
     "DATA SCIENCE ENTHUSIAST",
     "PROBLEM SOLVER",
   ];
