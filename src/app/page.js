@@ -236,38 +236,89 @@ export default function Home() {
     {
       title: "Bus Saarthi",
       description:
-        " • Real-time bus tracking system using MERN stack with WebSocket integration, reducing wait times by 30% through live location updates and predictive analytics. • IoT-based fleet management with route optimization, improving operational efficiency by 25%. • Admin panel with live analytics and mobile-responsive design for seamless fleet monitoring.",
+        " • 🚌 Real-Time Bus Tracking: MERN stack with WebSocket integration enabling live location updates and 30% reduced wait times through predictive analytics.• 📡 IoT Fleet Management: Smart sensors for fleet monitoring with route optimization improving operational efficiency by 25%.• 🛠️ Admin Panel: Live analytics dashboard with mobile-responsive design for seamless fleet supervision.",
       image: "/project-1.png", 
       tech: [
         "Node.js",
-        "Express.js",
-        "Prisma",
+        "React.js",
+        "MongoDB",
         "PostgreSQL",
-        "Redis",
-        "React",
+        "WebSocket",
+        "Typescript",
         "Tailwind CSS",
-        "JWT",
+        "ESP32 + LoRa",
       ],
       github: "https://github.com/vanshaggarwal07/Bus-Saarthi", 
       live: "https://bus-saarthiii.vercel.app/", 
     },
     {
+      title: "Mindful Space",
+      description:
+        " • 💬 AI Chatbot: Multilingual AI-powered mental wellness support.• 🏥 Tele-Medication: Video consultations with government & private doctors with instant e-prescriptions.• 📞 AI IVR Support: Toll-free 24/7 AI-assistant calling service.• 🩺 IoT Integration: Arduino-based BPM, pulse & temperature sensors auto-syncing to the platform.• 🌐 Multi-Language: Supports English, Hindi (हिंदी), and Marathi (मराठी).• 🎮 Interactive Games: Mental wellness games with built-in progress tracking.• 📊 Wellness Score: Continuously tracks and updates users' mental health scores.• 📚 EduTech Content: Curated educational resources for mental wellness learning.",
+      image: "/project-3.png", 
+      tech: [
+        "TypeScript",
+        "React.js",
+        "Tailwind CSS", 
+        "Artificial Intelligence",
+        "Arduino",
+        "BPM Pulse Sensor",
+        "IoT Hardware",
+        "Node.js",
+      ],
+      github: "https://github.com/vanshaggarwal07/Mindful-Space", 
+      live: "https://mindfulspace-eight.vercel.app/", 
+    },
+     {
+      title: "AIM-DRPS",
+      description:
+        " • 🧪 Risk Prediction System: Engineered a solution analyzing explosive material degradation patterns using datasets of 15,000+ samples.• 🤖 Machine Learning Models: Achieved 85% risk-forecasting accuracy while reducing false positives by 18%.• 📊 Real-Time Dashboards: Built Streamlit-based interactive dashboards for live visualization and key safety metrics.",
+      image: "/project-4.png", 
+      tech: [
+        "Python",
+        "MySQL",
+        "Machine Learning",
+        "Streamlit",
+        "Git","Github",
+        "Risk Prediction Model"
+      ],
+      github: "https://github.com/vanshaggarwal07/AIM-DRPS/", 
+      live: "https://github.com/vanshaggarwal07/AIM-DRPS/", 
+    },
+    {
       title: "TripPey",
       description:
-        " • Built a travel platform enabling cultural immersion with real-time budget tracking with voice commands, tested by 200+ beta users.• Leveraged Google Maps API to provide location-based recommendations, increasing user engagement by 35%. • Developed a gamified coin reward system integrated with discount partnerships, projected to improve retention.",
+        " • ✈️ Travel Platform: Enabled cultural immersion with real-time budget tracking and voice-command features, tested by 200+ beta users.• 📍 Location-Based Recommendations: Integrated Google Maps API to deliver smart suggestions, increasing user engagement by 35%.• 🎮 Gamified Reward System: Coin-based rewards linked with discount partnerships, projected to significantly improve user retention",
       image: "/project-2.png", 
       tech: [
         "TypeScript",
         "React.js",
-        "Recoil Toolkit",
+        "Tailwind CSS",
         "Node.js",
-        "Express.js",
+        "MySQL",
         "MongoDB",
-        "JWT",
+        "Machine Learning",
       ],
       github: "https://github.com/vanshaggarwal07/TripPeyy", 
       live: "https://trippey.vercel.app/", 
     },
+    {
+      title: "GradMate",
+      description:
+        " • 🌍 Global Alumni Network: Connect with 50,000+ alumni, students, and faculty worldwide for meaningful collaboration.• 🤝 Mentorship Programs: Access personalized guidance through 10,000+ active mentorships led by experienced alumni.• 💼 Career Opportunities: Explore exclusive alumni-shared jobs, internships, and professional openings.• 📩 Referral Support: Request referrals from alumni at top companies to boost your career success rate.• 📞 1-on-1 Expert Sessions: Book personalized virtual meetings with mentors and industry professionals.• 🎉 Alumni Events & Networking: Join career fairs, meetups, and community events to expand your professional circle.",
+      image: "/project-5.png", 
+      tech: [
+        "TypeScript",
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "PostGreSQL",
+        "MongoDB",
+        "Machine Learning",
+      ],
+      github: "https://github.com/vanshaggarwal07/GradMate-X", 
+      live: "https://gradmatex.vercel.app/", 
+    }
   ];
 
   const education = [
@@ -403,10 +454,10 @@ export default function Home() {
                 className="space-y-4 sm:space-y-6"
               >
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white">
-                  Full-Stack Developer
+                  Software Developer
                 </h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                    I’m a passionate Computer Science student and full-stack developer who loves solving real-world problems through code. My core strength lies in quickly understanding challenges and building efficient, scalable solutions, whether it’s using the MERN stack, Data Science or exploring new technologies beyond it.
+                    I’m a passionate Computer Science student and developer who loves solving real-world problems through code. My core strength lies in quickly understanding challenges and building efficient, scalable solutions, whether it’s using the MERN stack, Data Science or exploring new technologies beyond it.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
                     I enjoy learning, experimenting with different stacks, and continuously improving my development approach. Always open to collaboration, new ideas, and opportunities. Feel free to reach out!!
@@ -431,9 +482,9 @@ export default function Home() {
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
               >
                 {[
-                  { number: "900+", label: "Problems Solved" },
+                  { number: "600+", label: "Problems Solved" },
                   { number: "6+", label: "Projects Completed" },
-                  { number: "2+", label: "Hackathon Awards" },
+                  { number: "3+", label: "Hackathon Awards" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -492,47 +543,46 @@ export default function Home() {
                   <div className="flex-1">
                     <motion.div
                       className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700/30 hover:border-orange-500/30 transition-all duration-300 group"
-                      whileHover={{ y: -10, scale: 1.02 }}
+                      whileHover={{ y: -5, scale: 1.01 }}
                     >
                       <div className="flex items-start gap-4 sm:gap-6">
-                        <div className="p-3 sm:p-4 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-xl">
+                        <div className="p-3 sm:p-4 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-xl flex-shrink-0">
                           <exp.icon
                             size={28}
                             className="text-orange-400 sm:w-8 sm:h-8"
                           />
                         </div>
-                        <div className="flex-1">
-                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-orange-400 transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
                               {exp.role}
                             </h3>
-                            <div className="flex items-center gap-2 text-orange-400 mt-2 lg:mt-0">
-                              <IconCalendar size={18} />
+                            <div className="flex items-center gap-2 text-orange-400 whitespace-nowrap flex-shrink-0">
+                              <IconCalendar size={18} className="flex-shrink-0" />
                               <span className="font-medium">{exp.period}</span>
                             </div>
                           </div>
-                          <div className="space-y-3 mb-6">
-                            <div className="flex flex-col lg:flex-row lg:items-center gap-2">
+                          <div className="space-y-3">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                               <h4 className="text-base sm:text-lg font-semibold text-gray-200">
                                 {exp.company}
                               </h4>
-                              <span className="text-sm sm:text-base text-gray-400">
-                                • {exp.location}
-                              </span>
+                              {exp.location && (
+                                <span className="text-sm sm:text-base text-gray-400">
+                                  • {exp.location}
+                                </span>
+                              )}
                             </div>
-                          </div>
-                          <div>
-                            <ul className="space-y-2">
-                              {exp.achievements.map((achievement, i) => (
-                                <motion.li
-                                  key={i}
-                                  className="flex items-start gap-3 text-gray-300"
-                                >
-                                  <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0 mt-2" />
-                                  <span>{achievement}</span>
-                                </motion.li>
-                              ))}
-                            </ul>
+                            {exp.achievements?.length > 0 && (
+                              <ul className="mt-3 space-y-2">
+                                {exp.achievements.map((achievement, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-gray-300 text-sm sm:text-base">
+                                    <span className="text-orange-400 mt-1">•</span>
+                                    <span>{achievement}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -602,66 +652,48 @@ export default function Home() {
                   <div className="flex-1">
                     <motion.div
                       className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700/30 hover:border-orange-500/30 transition-all duration-300 group"
-                      whileHover={{ y: -10, scale: 1.02 }}
+                      whileHover={{ y: -5, scale: 1.01 }}
                     >
                       <div className="flex items-start gap-4 sm:gap-6">
-                        <div className="p-3 sm:p-4 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-xl">
+                        <div className="p-3 sm:p-4 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-xl flex-shrink-0">
                           <edu.icon
                             size={28}
                             className="text-orange-400 sm:w-8 sm:h-8"
                           />
                         </div>
 
-                        <div className="flex-1">
-                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-orange-400 transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
                               {edu.degree}
                             </h3>
-                            <div className="flex items-center gap-2 text-orange-400 mt-2 lg:mt-0">
-                              <IconCalendar size={18} />
+                            <div className="flex items-center gap-2 text-orange-400 whitespace-nowrap flex-shrink-0">
+                              <IconCalendar size={18} className="flex-shrink-0" />
                               <span className="font-medium">{edu.period}</span>
                             </div>
                           </div>
 
-                          <div className="space-y-3 mb-6">
-                            <div className="flex flex-col lg:flex-row lg:items-center gap-2">
+                          <div className="space-y-3">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                               <h4 className="text-base sm:text-lg font-semibold text-gray-200">
                                 {edu.institution}
                               </h4>
-                              <span className="text-sm sm:text-base text-gray-400">
-                                • {edu.location}
-                              </span>
+                              {edu.location && (
+                                <span className="text-sm sm:text-base text-gray-400">
+                                  • {edu.location}
+                                </span>
+                              )}
                             </div>
-                            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 to-red-600/20 px-4 py-2 rounded-full border border-orange-500/30">
-                              <IconTrophy
-                                size={16}
-                                className="text-orange-400"
-                              />
-                              <span className="text-orange-300 font-medium">
-                                {edu.grade}
-                              </span>
-                            </div>
-                          </div>
-
-                          <div>
-                            <ul className="space-y-2">
-                              {edu.achievements.map((achievement, i) => (
-                                <motion.li
-                                  key={i}
-                                  className="flex items-center gap-3 text-gray-300"
-                                  initial={{ opacity: 0, x: -20 }}
-                                  whileInView={{ opacity: 1, x: 0 }}
-                                  transition={{
-                                    duration: 0.5,
-                                    delay: index * 0.2 + i * 0.1,
-                                  }}
-                                  viewport={{ once: true }}
-                                >
-                                  <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0" />
-                                  <span>{achievement}</span>
-                                </motion.li>
-                              ))}
-                            </ul>
+                            {edu.achievements?.length > 0 && (
+                              <ul className="mt-3 space-y-2">
+                                {edu.achievements.map((achievement, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-gray-300 text-sm sm:text-base">
+                                    <span className="text-orange-400 mt-1">•</span>
+                                    <span>{achievement}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </div>
                         </div>
                       </div>

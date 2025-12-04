@@ -115,7 +115,7 @@ export function HeroSection() {
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
                 ))}
-                {"Vansh".split("").map((char, index) => (
+                {"Vansh Aggarwal".split("").map((char, index) => (
                   <motion.span
                     key={index + 10}
                     initial={{ opacity: 0, y: 50, scale: 0.8 }}
