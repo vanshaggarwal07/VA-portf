@@ -318,7 +318,26 @@ export default function Home() {
       ],
       github: "https://github.com/vanshaggarwal07/GradMate-X", 
       live: "https://gradmatex.vercel.app/", 
+    },
+    {
+      title: "ReWaste",
+      description:
+        " • ♻️ Recycling Information: Access detailed material guides, local recycling centers, and best-practice tips.• 🌿 Sustainable Living: Explore eco-friendly lifestyle advice, product recommendations, and DIY upcycling tutorials.• 👥 Community Engagement: Connect through forums, participate in challenges, earn rewards, and join partnered initiatives.• 🗑️ Waste Management Services: View waste collection details, disposal guidelines, and integrated service partnerships.• 🛒 Eco Marketplace: Discover and purchase eco-friendly or upcycled products directly through the platform.• 🎓 Educational Resources: Learn through curated courses, webinars, and downloadable sustainability materials.",
+      image: "/project-6.png", 
+      tech: [
+        "JavaScript", 
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+        "RTWeb",
+        "CosmicJS",
+        "Netlify"
+      ],
+      github: "https://github.com/vanshaggarwal07/ReWaste-Prod", 
+      live: "https://rewaste.netlify.app/", 
     }
+    
   ];
 
   const education = [
