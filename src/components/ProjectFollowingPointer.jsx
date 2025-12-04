@@ -132,7 +132,7 @@ const ProjectCard = ({ project, getTechIconAndColor, onImageClick }) => {
         }
       >
         <motion.div
-          className="group relative h-full overflow-hidden rounded-xl sm:rounded-2xl border border-gray-700/50 bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-md transition duration-300 hover:shadow-2xl hover:shadow-orange-500/20 hover:border-orange-500/50"
+          className="group relative h-full flex flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-gray-700/50 bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-md transition duration-300 hover:shadow-2xl hover:shadow-orange-500/20 hover:border-orange-500/50 min-h-[500px] flex flex-col"
           whileHover={{ y: -8, rotateX: 5 }}
           transition={{ type: "spring", stiffness: 300, damping: 25 }}
         >
@@ -173,27 +173,43 @@ const ProjectCard = ({ project, getTechIconAndColor, onImageClick }) => {
           </div>
 
           {/* Project Content */}
-          <div className="p-6">
+          <div className="p-6 flex-1 flex flex-col h-full">
             {/* Project Title */}
             <h2 className="mb-3 text-xl font-bold text-white group-hover:text-orange-400 transition-colors duration-300">
               {project.title}
             </h2>
 
             {/* Project Description */}
-            <div className="mb-4 text-sm text-gray-300 leading-relaxed">
-              <div className="space-y-2">
+            <div className="mb-4 text-sm text-gray-300 leading-relaxed flex-1">
+              <div className="space-y-2 h-full max-h-[180px] overflow-y-auto pr-2 custom-scrollbar">
                 {project.description
                   .split("•")
                   .filter((item) => item.trim())
-                  .slice(0, 2)
                   .map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <div className="w-1 h-1 bg-orange-400 rounded-full mt-2 flex-shrink-0" />
-                      <span className="line-clamp-2">{item.trim()}</span>
+                      <span className="whitespace-normal">{item.trim()}</span>
                     </div>
                   ))}
               </div>
             </div>
+            
+            <style jsx global>{`
+              .custom-scrollbar::-webkit-scrollbar {
+                width: 4px;
+              }
+              .custom-scrollbar::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 4px;
+              }
+              .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: rgba(249, 115, 22, 0.5);
+                border-radius: 4px;
+              }
+              .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: rgba(249, 115, 22, 0.7);
+              }
+            `}</style>
 
             {/* Tech Stack */}
             <div className="mb-6">
@@ -220,7 +236,7 @@ const ProjectCard = ({ project, getTechIconAndColor, onImageClick }) => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 pt-4">
               <a
                 href={project.github}
                 target="_blank"

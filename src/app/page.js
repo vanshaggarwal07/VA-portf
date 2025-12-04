@@ -34,6 +34,7 @@ import {
   IconSchool,
   IconServer,
   IconTrophy,
+  IconTrophyFilled,
   IconWorldWww
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
@@ -233,9 +234,9 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Shortly - Modern URL Shortener",
+      title: "Bus Saarthi",
       description:
-        "• Developed a full-stack URL shortener with secure authentication and real-time analytics. • Built a RESTful backend API using Node.js, Express, and Prisma for user authentication and link management. • Integrated Redis caching to accelerate URL lookups and reduce database load, improving performance.",
+        " • Real-time bus tracking system using MERN stack with WebSocket integration, reducing wait times by 30% through live location updates and predictive analytics. • IoT-based fleet management with route optimization, improving operational efficiency by 25%. • Admin panel with live analytics and mobile-responsive design for seamless fleet monitoring.",
       image: "/project-1.png", 
       tech: [
         "Node.js",
@@ -247,13 +248,13 @@ export default function Home() {
         "Tailwind CSS",
         "JWT",
       ],
-      github: "https://github.com/suraj-78/shortly", 
-      live: "https://shortly-tan-six.vercel.app/", 
+      github: "https://github.com/vanshaggarwal07/Bus-Saarthi", 
+      live: "https://bus-saarthiii.vercel.app/", 
     },
     {
-      title: "Second Brain – Your Digital Knowledge Hub",
+      title: "TripPey",
       description:
-        "• Designed a digital knowledge system capable of storing 1,000+ notes and links with advanced search and tagging. • Executed dynamic sidebar filtering, improving content discovery. • Spearheaded the 'Share Your Brain' feature, enabling public note-sharing and attracting 50+ users in two weeks.",
+        " • Built a travel platform enabling cultural immersion with real-time budget tracking with voice commands, tested by 200+ beta users.• Leveraged Google Maps API to provide location-based recommendations, increasing user engagement by 35%. • Developed a gamified coin reward system integrated with discount partnerships, projected to improve retention.",
       image: "/project-2.png", 
       tech: [
         "TypeScript",
@@ -264,18 +265,18 @@ export default function Home() {
         "MongoDB",
         "JWT",
       ],
-      github: "https://github.com/suraj-78/Second-Brain", 
-      live: "https://second-brain-10v0.onrender.com/", 
+      github: "https://github.com/vanshaggarwal07/TripPeyy", 
+      live: "https://trippey.vercel.app/", 
     },
   ];
 
   const education = [
     {
-      degree: "B.Tech. in Computer Science & Engineering",
-      institution: "Indian Institute of Information Technology Bhagalpur",
-      location: "Bhagalpur, Bihar",
-      period: "2022 - 2026",
-      grade: "CGPA: 7.8",
+      degree: "B.Tech. in Information Technology",
+      institution: "Guru Gobind Singh Indraprastha University",
+      location: "New Delhi",
+      period: "2023 - 2027",
+      grade: "CGPA: 8.21",
       icon: IconSchool,
       achievements: [
         "Coursework: Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, DBMS.",
@@ -283,8 +284,8 @@ export default function Home() {
     },
     // {
     //   degree: "Higher Secondary",
-    //   institution: "Dr. Ulhas Patil Eng Medium School",
-    //   location: "Raver, Maharashtra",
+    //   institution: "",
+    //   location: "",
       
     //   grade: "Percentage : 81.2%",
     //   icon: IconCertificate,
@@ -293,7 +294,7 @@ export default function Home() {
     //   ],
     // },
     // {
-    //   degree: "Secondary",
+    //   degree: "Secondary",h
     //   institution: "Kendriya Vidyalaya O.F Bhusawal",
     //   location: "Bhusawal, Maharashtra",
       
@@ -307,40 +308,44 @@ export default function Home() {
 
   const experience = [
     {
-      role: "Backend Development Intern",
-      company: "Small Fare",
+      role: "Software Development Intern",
+      company: " Defence Research and Development Organisation (DRDO)",
       location: "Remote",
-      period: "August 2025 - October 2025",
+      period: "June 2025 - August 2025",
       icon: IconBuilding,
       achievements: [
-        "Implemented secure authentication and authorization middleware in Node.js/Express.js using JWT refresh tokens, ensuring robust session management.",
-        "Migrated raw SQL queries to Prisma ORM, improving type safety and maintainability, and reducing SQL injection risks by 30%.",
-        "Remediated a critical security vulnerability, preventing unauthorized admin access.",
+        "Built a predictive AI system to assess explosive material degradation and associated risks.",
+        "Engineered data cleaning and preprocessing pipelines for 10,000+ real-life records.Migrated raw SQL queries to Prisma ORM, improving type safety and maintainability, and reducing SQL injection risks by 30%.",
+        "Spearheaded a risk evaluation framework improving safety decision-making for defense applications by 20%Remediated a critical security vulnerability, preventing unauthorized admin access.",
       ],
     },
   ];
   
     const achievements = [
+             {
+      description: "  Runner up at SolveSphere Hackathon, BPIT (550+ teams).",
+      icon: IconTrophyFilled
+    },
+    {
+      description: "Advanced to Round 3 in Microsoft Hackformers Hackathon’25 (150k+ participants)",
+      icon: IconTrophy
+    },
+    {
+      description: "Top 5 at Youth4Future Hackathon, MSIT (350+ teams)",
+      icon: IconTrophy
+    },
+    {
+      description: "Winner at HackWie 3.0 Avensis’25 out of 50k applicants",
+      icon: IconTrophyFilled
+    },
+    {
+      description: "Led a team in the Smart India Hackathon (Internal Round), ranking in the top 5 out of 60+ teams.",
+      icon: IconTrophy
+    },
     {
       description: "Excelled on LeetCode, achieving a maximum rating of 1720+, ranked in the top 12% globally, with a highest global rank of 3290.",
-      icon: IconTrophy
-    },
-    {
-      description: "Solved over 900+ problems across platforms including LeetCode, Codeforces, GeeksforGeeks, and Coding Ninjas.",
       icon: IconCode
-    },
-    {
-      description: "Selected as a semifinalist in Flipkart Grid 7.0 among 160k+ registered students.",
-      icon: IconTrophy
-    },
-    {
-      description: "2X semifinalist in the Tata Imagination Challenge (2023 & 2024) out of 312k+ participants.",
-      icon: IconTrophy
-    },
-    {
-      description: "Led a team in the Smart India Hackathon (Internal Round), ranking in the top 8 out of 60+ teams.",
-      icon: IconTrophy
-    }
+    }, 
   ];
 
   return (
@@ -401,7 +406,7 @@ export default function Home() {
                   Full-Stack Developer
                 </h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                    I’m a passionate Computer Science student and full-stack developer who loves solving real-world problems through code. My core strength lies in quickly understanding challenges and building efficient, scalable solutions, whether it’s using the MERN stack or exploring new technologies beyond it.
+                    I’m a passionate Computer Science student and full-stack developer who loves solving real-world problems through code. My core strength lies in quickly understanding challenges and building efficient, scalable solutions, whether it’s using the MERN stack, Data Science or exploring new technologies beyond it.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
                     I enjoy learning, experimenting with different stacks, and continuously improving my development approach. Always open to collaboration, new ideas, and opportunities. Feel free to reach out!!
@@ -409,7 +414,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-4 pt-4">
                   <div className="flex items-center gap-2 text-orange-400">
                     <IconMapPin size={20} />
-                    <span>Bhusawal, Maharashtra, India</span>
+                    <span>New Delhi, India</span>
                   </div>
                   <div className="flex items-center gap-2 text-orange-400">
                     <IconMail size={20} />
@@ -427,7 +432,8 @@ export default function Home() {
               >
                 {[
                   { number: "900+", label: "Problems Solved" },
-                  { number: "5+", label: "Projects Completed" },
+                  { number: "6+", label: "Projects Completed" },
+                  { number: "2+", label: "Hackathon Awards" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -953,7 +959,7 @@ export default function Home() {
                           Email
                         </p>
                         <p className="text-orange-400 text-sm sm:text-base break-all">
-                          suraj.2201082cs@iiitbh.ac.in
+                          vanshaggarwal07@gmail.com
                         </p>
                       </div>
                     </div>
@@ -964,7 +970,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-orange-400">+91 8329965584</p>
+                        <p className="text-orange-400">+91 9811330709</p>
                       </div>
                     </div>
 
@@ -975,7 +981,7 @@ export default function Home() {
                       <div>
                         <p className="font-medium">Location</p>
                         <p className="text-orange-400">
-                          Bhusawal, Maharashtra, India
+                          New Delhi, India
                         </p>
                       </div>
                     </div>
@@ -984,7 +990,7 @@ export default function Home() {
 
                 <div className="flex gap-4">
                   <motion.a
-                    href="https://linkedin.com/in/ssp001"
+                    href="https://www.linkedin.com/in/vanshaggarwal07/"
                     target="_blank"
                     className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-orange-500/50 transition-all duration-300"
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -992,14 +998,14 @@ export default function Home() {
                     <IconBrandLinkedin size={24} className="text-orange-400" />
                   </motion.a>
                   <motion.a
-                    href="https://github.com/suraj-78" // Please replace with your actual GitHub link
+                    href="https://github.com/vanshaggarwal07" // Please replace with your actual GitHub link
                     target="_blank"
                     className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-orange-500/50 transition-all duration-300"
                     whileHover={{ scale: 1.1, y: -2 }}
                   >
                     <IconBrandGithub size={24} className="text-orange-400" />
                   </motion.a>
-                </div>
+                </div> 
               </motion.div>
 
               <motion.div
