@@ -394,7 +394,7 @@ export default function Home() {
       icon: IconTrophy
     },
     {
-      description: "Excelled on LeetCode, achieving a maximum rating of 1720+, ranked in the top 12% globally, with a highest global rank of 3290.",
+      description: "Excelled on LeetCode",
       icon: IconCode
     }, 
   ];
